@@ -53,13 +53,13 @@
                 android:id="@+id/exc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/_20" />
+                android:text="@string/excelent" />
 
             <RadioButton
                 android:id="@+id/good"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/_18" />
+                android:text="@string/good" />
 
             <RadioButton
                 android:id="@+id/norm"
@@ -67,7 +67,7 @@
                 android:layout_height="36dp"
                 android:checked="true"
                 android:minHeight="48dp"
-                android:text="@string/_15"
+                android:text="@string/normal"
                 tools:ignore="TouchTargetSizeCheck" />
         </RadioGroup>
 

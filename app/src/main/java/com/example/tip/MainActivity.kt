@@ -35,9 +35,9 @@ class MainActivity : AppCompatActivity() {
     }
     fun calulate(price: Double):Double{
         val tipPercent:Double = when (binding.rad.checkedRadioButtonId) {
-            R.id.exc -> 0.20
-            R.id.good -> 0.18
-            else -> 0.15
+            R.id.exc -> 0.020
+            R.id.good -> 0.018
+            else -> 0.015
         }
         binding.tipAmount.text = getString(R.string.tip_amount, (tipPercent*price).toString())
         return (price+calc(price, tipPercent))
