@@ -3,8 +3,8 @@
     <string name="cost_of_service">Cost of Service</string>
     <string name="how_was_the_service">How was the service?</string>
     <string name="tip_amount">Tip amount is %1$s</string>
-    <string name="_20">20</string>
-    <string name="_18">18</string>
-    <string name="_15">15</string>
+    <string name="_20">Excellent 20%</string>
+    <string name="_18">Good 18%</string>
+    <string name="_15">Norm 15%</string>
     <string name="ok">OK</string>
 </resources>
