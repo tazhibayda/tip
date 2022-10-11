@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Toast
@@ -17,14 +18,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val price: View = requireViewById(R.id.price)
+        val price: EditText = requireViewById(R.id.price)
         val button: Button = requireViewById(R.id.button)
         val radio: RadioGroup = requireViewById(R.id.rad)
         val selected: RadioButton = requireViewById(radio.checkedRadioButtonId)
 
 
         button.setOnClickListener {
-            val toast: Toast = Toast(this,)
+            val res: Int = price.text.toString().toInt()
+            val toast: Toast = Toast.makeText(this,
+                res+(res/100*selected.text.toString().toInt())
+                ,Toast.LENGTH_SHORT)
+            toast.show()
+//            val ts: Toast = Toast.makeText()
         }
     }
 }
